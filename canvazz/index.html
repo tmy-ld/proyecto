@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .seccion {
+      display: none;
+    }
+    .seccion:target {
+      display: block;
+    }
+
+  </style>
+  <title>Mi página con secciones</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio">Kodland</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Tutores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Sobre el curso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Opiniones</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4 bg-success-subtle">
+
+    <div class="Bienvenida">
+      <h2 class="frase">Bienvenido</h2>
+      <p>Bienvenido a la pagina sobre Kodland.</p>
+    </div>
+
+    <div class="seccion" id="inicio">
+        <h2>Acerca de los tutores...</h2>
+        <p>Son expertos en su área, como “Master coder”, “Web guru”, “Game developer”, “Animation adept” y “Design visionary”</p>
+
+
+        <p>Cuentan con experiencia que va de 0.5 a más de 20 años, según el perfil.</p>
+
+        <p>Antes de enseñar, reciben una capacitación intensiva (onboarding y talleres continuos) para asegurar calidad y consistencia.</p>
+
+        <p>Durante la clase, no solo imparten la materia, sino que actúan como guías o mentores, adaptándose a los intereses y nivel de los estudiantes.</p>
+
+        <p>Las clases son muy didácticas: interactivas, con tareas en tiempo real, feedback inmediato y un enfoque muy práctico</p>
+    </div>
+
+    <div class="seccion" id="proyectos">
+      <h2>Los cursos</h2>
+      <p>Kodland cubre una amplia gama de cursos digitales para edades de 5 a 17 años, agrupados por etapas:</p>
+      <p>5–7 años FunTech --> Exploradores --> Iniciación digital y pensamiento computacional. <br>  
+8–12 años --> Scratch --> Programación visual, juegos y animación. <br>        
+10–12 años --> Roblox / Diseño de mundos --> Programación en LUA, diseño 2D/3D, modelado. <br>     
+13+ años --> Python Start / Python Pro --> Python, Pygame, consolas, UI/UX, Flask.  <br>     
+13+ años --> Diseño web / JavaScript --> HTML/CSS, JavaScript y desarrollo web. <br>        
+13+ años --> Unity --> Programación en C#, desarrollo de videojuegos 3D.  <br>        
+10–17 años --> Fantastic Worlds Design --> Diseño gráfico, animación, modelado 3D.      
+    </p>
+    </div>
+
+    <div class="seccion" id="contacto">
+      <h2>Opiniones de nuestros estudiantes</h2>
+      <p>Los tutores están muy preparados, reciben soporte constante y actúan como guías motivadores. <br>     
+
+Los cursos son prácticos, estructurados por edades y habilidades, con énfasis en proyectos. <br>         
+
+El formato es flexible (grupo vs individual) y la enseñanza es muy interactiva y segura.</p>          
+    </div>
+  </main>
+</body>
+</html>

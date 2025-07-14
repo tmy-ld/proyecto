@@ -1,0 +1,10 @@
+
+
+.Bienvenida{
+    display: flex;
+    justify-content: center;
+}
+
+.frase{
+    display: inline;
+}
